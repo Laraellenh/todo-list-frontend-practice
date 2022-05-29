@@ -4,6 +4,7 @@
 ul {
     margin: 0;
     padding: 0;
+    column-width: 50%;
   }
 
 /* Style the list items */
@@ -11,7 +12,7 @@ ul ol {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: lightsalmon;
     font-size: 18px;
     transition: 0.2s;
   
@@ -26,9 +27,19 @@ ul ol {
     font-size: large;
     margin-left: 3%;
     color: red;
+    
 }
 .h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
     margin-left: 3%
+}
+
+.input{
+    font-size: small;
+    color: black;
+
+}
+.moreInfo{
+    margin-left: 51%;
 }
