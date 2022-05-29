@@ -32,33 +32,13 @@ useEffect(()=>{
   const taskList = tasks?.map((task)=> <TodoContainer task={task} key={task.id}> {task.task} </TodoContainer>)
  console.log(taskList)
 
-//  const myNodelist = document.getElementsByTagName("LI");
-//  for ( let i = 0; i < myNodelist.length; i++) {
-//    const span = document.createElement("SPAN");
-//    const txt = document.createTextNode("\u00D7");
-//    span.className = "close";
-//    span.appendChild(txt);
-//    myNodelist[i].appendChild(span);
-//  }
-//  const list = document.querySelector('ul');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
 
-// const close = document.getElementsByClassName("close");
-// let i;
-// for (i = 0; i < close.length; i++) {
-//   close[i].onclick = function() {
-//     const div = this.parentElement;
-//     div.style.display = "none";
-//   }
-// }
   return (
     
   
-    <div  id="myDIV" class="header">  Front End Dream Job Task List 
+    <div  > 
+      <div className="div"> Front End Dream Job Task List </div>
+      <h4 className="h4"> Eyes on the prize </h4>
       <ul id="myUL">
       {taskList}
       
