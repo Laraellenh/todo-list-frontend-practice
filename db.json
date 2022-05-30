@@ -15,5 +15,107 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "tasks": [
+    {
+      "task": "DSA",
+      "id": 1
+    },
+    {
+      "task": "repeat Flatiron phase 2 coding challenge",
+      "id": 2
+    },
+    {
+      "task": "graph traversal",
+      "id": 3
+    },
+    {
+      "task": "review testing unit, integration, e2e using Jest",
+      "id": 4
+    },
+    {
+      "task": "repeat Flatiron phase 1 vanilla JS coding challenge",
+      "id": 5
+    },
+    {
+      "task": "review data modeling (this time from front end or back end for front end rather than ruby",
+      "id": 6
+    },
+    {
+      "task": " string manipulation including reversal, palindrome, capital/lowercase, integer to string and back",
+      "id": 7
+    },
+    {
+      "task": "review Magento",
+      "id": 8
+    },
+    {
+      "task": "review GraphQL and learn basics commands and installation",
+      "id": 9
+    },
+    {
+      "task": "review Docker including how to install and how it differs from Kubernetes",
+      "id": 10
+    },
+    {
+      "task": "frontend Podcast with expert",
+      "id": 11
+    },
+    {
+      "task": "review react hooks",
+      "id": 12
+    },
+    {
+      "task": "research react lifecycle methods and practice",
+      "id": 13
+    },
+    {
+      "task": "React practice assessment",
+      "id": 14
+    },
+    {
+      "task": "review interview best practices",
+      "id": 15
+    },
+    {
+      "task": "testing, edge cases",
+      "id": 16
+    },
+    {
+      "task": "how to approach Greefield Solution because React is so open ended - libraries, architecture, ect",
+      "id": 17
+    },
+    {
+      "task": "concurrency",
+      "id": 18
+    },
+    {
+      "task": "graph traversal",
+      "id": 19
+    },
+    {
+      "task": "leetcode 1 hour DSA",
+      "id": 20
+    },
+    {
+      "task": "leetcode 1 graph traversal",
+      "id": 21
+    },
+    {
+      "task": "Big O overview",
+      "id": 22
+    },
+    {
+      "task": "Big O practice",
+      "id": 23
+    },
+    {
+      "task": "Build tic tac toe",
+      "id": 24
+    },
+    {
+      "task": "build tic tac toe",
+      "id": 25
+    }
+  ]
 }
