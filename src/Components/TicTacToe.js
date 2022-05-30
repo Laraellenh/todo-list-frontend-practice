@@ -17,7 +17,8 @@ export default function TicTacToe() {
   }
   return (
     <div >
-      <h1>Tic Tac Toe</h1>
+      <h1>Tic Tac Toe </h1>
+      <h3> I'm !Not a Rookie </h3>
       {gameBoard.map((square, i) => {
         return (
           <span key={i}>

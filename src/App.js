@@ -6,7 +6,7 @@ import NewToDo from './Components/NewToDo'
 import { Link} from "react-router-dom"
 import TicTacToe from './Components/TicTacToe'
 import Counter from './Components/Counter'
-
+// going to use borwser router to put give other components (game, counter) their own paths when I have time
 
 function App() {
 const [tasks, setTasks] = useState([]);
@@ -31,15 +31,15 @@ useEffect(()=>{
   
     <div  > 
     
-      <div className="div"> Front End Dream Job Task List </div>
-      <h4 className="h4"> Eyes on the prize </h4>
+      <div className="div"> How to Get the Job </div>
+      <h4 className="h4"> Look, I'm On a Computer </h4>
       <NewToDo onAddNewTask={addNewToDo} tasksArray= {taskList} setTasks={setTasks} />
-      <Link to= "/tictactoe"> Play TicTacToe </Link>
+      {/* <Link to= "/tictactoe"> Play TicTacToe </Link> */}
       <ul id="myUL">
       {taskList}
       <br></br>
       <TicTacToe/>  
-      <br></br>
+      {/* <br></br> */}
       <Counter/>
       </ul>
       {/* <Routes>

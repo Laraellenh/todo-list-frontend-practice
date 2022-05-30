@@ -32,7 +32,7 @@ const [newTask, setNewTask] = useState ("")
     console.log(newTask)
     return (
         <form onSubmit={handleSubmit}>
-         <label> Enter New Task </label> 
+         <label>  More to do? Jot it down, ya clown </label> 
             <input type = "text"
             placeholder = "enter a new task here"
             value = {newTask}
