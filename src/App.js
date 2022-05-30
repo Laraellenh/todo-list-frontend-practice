@@ -3,8 +3,10 @@ import './App.css';
 import React, {useState, useEffect} from "react";
 import TodoContainer from './Components/TodoContainer'
 import NewToDo from './Components/NewToDo'
-import {Routes, Route, Link} from "react-router-dom"
+import { Link} from "react-router-dom"
 import TicTacToe from './Components/TicTacToe'
+import Counter from './Components/Counter'
+
 
 function App() {
 const [tasks, setTasks] = useState([]);
@@ -35,7 +37,10 @@ useEffect(()=>{
       <Link to= "/tictactoe"> Play TicTacToe </Link>
       <ul id="myUL">
       {taskList}
+      <br></br>
       <TicTacToe/>  
+      <br></br>
+      <Counter/>
       </ul>
       {/* <Routes>
         <Route path = "/tictactoe" element = {<TicTacToe />}>
