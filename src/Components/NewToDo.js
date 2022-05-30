@@ -4,55 +4,46 @@ import React, {useState} from 'react'
 function NewToDo({onAddNewTask, tasksArray, setTasks }) {
 const [newTask, setNewTask] = useState ("")
 
-console.log(tasksArray.length+1)
-
     function handleSubmit(e){
-        e.preventDefault();
+        
         const formInput = {
-            task_task: newTask.task,
-            task_id: tasksArray.length + 1
+            task: newTask
         }
-        console.log(formInput)
-        fetch('db.json', { 
+
+        e.preventDefault()
+        
+        fetch('http://localhost:3000/tasks', { 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(formInput)
-            .then(function(response){
-                console.log(response);
-                return response.json();
-            })
-            .then(function(newTask){
-                console.log(newTask)
-                setNewTask(newTask)
-                setTasks([...tasksArray, newTask])
-            })
         })
+        .then(r=>r.json())
+        .then(console.log)
+        setNewTask("")
     }
+
     function handleChange(e){
         setNewTask(e.target.value)
         console.log(e.target.value)
     }
+
+    console.log(newTask)
     return (
-        <form
-            type = "submit"
-           
-            >
+        <form onSubmit={handleSubmit}>
          <label> Enter New Task </label> 
             <input type = "text"
-            placehold = "enter a new task here"
-            value = {newTask.task}
+            placeholder = "enter a new task here"
+            value = {newTask}
             onChange ={handleChange}
            />
            <button
            type= "submit"
-            onSubmit =  {handleSubmit}>
-                Submit
+           >
+            Submit
             </button>
         </form>
-        
-        
     )
 }
 export default NewToDo;

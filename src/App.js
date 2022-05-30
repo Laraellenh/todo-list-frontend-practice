@@ -12,26 +12,11 @@ function addNewToDo(newTask){
   
 }
 // fetch data locally, set it in state array, invoke that w/ the useEffect  hook
-const getData =()=>{
-  fetch('db.json', {
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-     }
-  }
-  )
-    .then(function(response){
-      console.log(response)
-      return response.json();
-    })
-    .then(function(tasks) {
-      console.log(tasks);
-      setTasks(tasks)
-    });
-}
 useEffect(()=>{
-  getData()
-},[])
+  fetch('http://localhost:3000/tasks')
+    .then(r=>r.json())
+    .then(setTasks)
+  },[])
     
   const taskList = tasks?.map((task)=> <TodoContainer task={task} key={task.id}> {task.task} </TodoContainer>)
  console.log(taskList)
