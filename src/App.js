@@ -8,6 +8,8 @@ import TicTacToe from './Components/TicTacToe'
 import Counter from './Components/Counter'
 import Toggle from './Components/Toggle'
 import DataBinding from './Components/DataBinding';
+import Parent from './Components/Parent'
+import SumTwoNum from './Components/SumTwoNum';
 // going to use borwser router to put give other components (game, counter) their own paths when I have time
 
 function App() {
@@ -38,16 +40,19 @@ useEffect(()=>{
       className="div"> How to Get the Job </div>
       <h4 className="h4"> Look, I'm On a Computer </h4>
       <Toggle/>
+      <SumTwoNum/>
       <TicTacToe/>  
       <br></br>
       <DataBinding/>
       <Counter/>
+      
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
+      <Parent/>
       <NewToDo onAddNewTask={addNewToDo} tasksArray= {taskList} setTasks={setTasks} />
       {/* <Link to= "/tictactoe"> Play TicTacToe </Link> */}
       <ul id="myUL">

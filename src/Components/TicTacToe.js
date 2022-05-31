@@ -18,7 +18,7 @@ export default function TicTacToe() {
   return (
     <div
         style={{
-            background: "hotpink",
+            
             fontFamily: "sans-serif",
             fontSize: "80%",
             marginLeft: "10px",
@@ -31,7 +31,12 @@ export default function TicTacToe() {
       {gameBoard.map((square, i) => {
         return (
           <span key={i}>
-            <button onClick={() => handleClick(i)}>{square}</button>
+            <button 
+            style={{
+              background: "hotpink"
+              
+            }}
+            onClick={() => handleClick(i)}>{square}</button>
             {i === 2 || i === 5 ? <br/> : ""}
           </span>
         );

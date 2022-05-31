@@ -8,7 +8,7 @@ import { useState } from "react"
         <>
         <input
         type = "text"
-        placeholder="Type Here"
+        placeholder="Type Here, See Below"
         value ={dataValue}
         onChange = {(e)=>setDataValue(e.target.value) }
        />
