@@ -3,7 +3,7 @@ import './App.css';
 import React, {useState, useEffect} from "react";
 import TodoContainer from './Components/TodoContainer'
 import NewToDo from './Components/NewToDo'
-import { Link} from "react-router-dom"
+import { Link, Routes, Route} from "react-router-dom"
 import TicTacToe from './Components/TicTacToe'
 import Counter from './Components/Counter'
 import Toggle from './Components/Toggle'
@@ -39,6 +39,8 @@ useEffect(()=>{
       
       className="div"> How to Get the Job </div>
       <h4 className="h4"> Look, I'm On a Computer </h4>
+
+      
       <Toggle/>
       <SumTwoNum/>
       <TicTacToe/>  
