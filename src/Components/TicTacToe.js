@@ -21,7 +21,10 @@ export default function TicTacToe() {
             background: "hotpink",
             fontFamily: "sans-serif",
             fontSize: "80%",
-            marginLeft: "10px"
+            marginLeft: "10px",
+            justifyItems: "space-evenly",
+            
+            
         }} >
       <h1>Tic Tac Toe </h1>
       <h3> I'm !Not a Rookie Programming Project </h3>

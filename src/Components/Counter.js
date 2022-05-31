@@ -29,8 +29,7 @@ export default function Counter(){
             <button 
             style={{
                 fontSize: '100%',
-                top: '20vh',
-                marginRight: '5px',
+                marginLeft: '5px',
                 backgroundColor: 'blue',
                 borderRadius: '8%',
                 color: 'orange',
@@ -47,7 +46,6 @@ export default function Counter(){
             <button 
                 style={{
                     fontSize: '100%',
-                    top: '20vh',
                     marginLeft: '5px',
                     backgroundColor: 'red',
                     borderRadius: '8%',

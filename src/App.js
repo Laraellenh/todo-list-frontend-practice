@@ -7,6 +7,7 @@ import { Link} from "react-router-dom"
 import TicTacToe from './Components/TicTacToe'
 import Counter from './Components/Counter'
 import Toggle from './Components/Toggle'
+import DataBinding from './Components/DataBinding';
 // going to use borwser router to put give other components (game, counter) their own paths when I have time
 
 function App() {
@@ -38,6 +39,8 @@ useEffect(()=>{
       <h4 className="h4"> Look, I'm On a Computer </h4>
       <Toggle/>
       <TicTacToe/>  
+      <br></br>
+      <DataBinding/>
       <Counter/>
       <br></br>
       <br></br>
