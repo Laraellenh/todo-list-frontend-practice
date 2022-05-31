@@ -1,7 +1,7 @@
 
 export default function Child({setValue}){
     return(
-        <h1>Child
+        <h3>Child
             
             <button
             
@@ -9,7 +9,7 @@ export default function Child({setValue}){
                 Change parent value, please
             </button>
            
-        </h1>
+        </h3>
     )
 
 }

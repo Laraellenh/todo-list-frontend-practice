@@ -10,6 +10,7 @@ import Toggle from './Components/Toggle'
 import DataBinding from './Components/DataBinding';
 import Parent from './Components/Parent'
 import SumTwoNum from './Components/SumTwoNum';
+import Hooks from './Components/Hooks';
 // going to use borwser router to put give other components (game, counter) their own paths when I have time
 
 function App() {
@@ -27,9 +28,17 @@ useEffect(()=>{
   },[])
     
   const taskList = tasks?.map((task)=> <TodoContainer task={task} key={task.id}> {task.task} </TodoContainer>)
- console.log(taskList)
+  console.log(taskList)
 
+  const [hooks, setHooks] = useState([]);
+  useEffect(()=>{
+     fetch ("http://localhost:3000/hooks") 
+     .then(r=>r.json())
+     .then(setHooks)
+  }, [])
 
+  console.log(hooks)
+  const hooksList = hooks?.map((hook, i)=> <Hooks hook={hook} key={hook[i]}/>)
   return (
     
   
@@ -57,9 +66,9 @@ useEffect(()=>{
       <Parent/>
       <NewToDo onAddNewTask={addNewToDo} tasksArray= {taskList} setTasks={setTasks} />
       {/* <Link to= "/tictactoe"> Play TicTacToe </Link> */}
-      <ul id="myUL">
+      <ul >
       {taskList}
-     
+      {hooksList}
       
       </ul>
       {/* <Routes>

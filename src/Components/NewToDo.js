@@ -29,7 +29,7 @@ const [newTask, setNewTask] = useState ("")
         console.log(e.target.value)
     }
 
-    console.log(newTask)
+   
     return (
         <form onSubmit={handleSubmit}>
          <label
