@@ -16,9 +16,15 @@ export default function TicTacToe() {
       setPlayer( player === "X" ? "O" : "X")
   }
   return (
-    <div >
+    <div
+        style={{
+            background: "hotpink",
+            fontFamily: "sans-serif",
+            fontSize: "80%",
+            marginLeft: "10px"
+        }} >
       <h1>Tic Tac Toe </h1>
-      <h3> I'm !Not a Rookie </h3>
+      <h3> I'm !Not a Rookie Programming Project </h3>
       {gameBoard.map((square, i) => {
         return (
           <span key={i}>

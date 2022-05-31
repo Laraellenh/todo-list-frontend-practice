@@ -31,7 +31,7 @@ export default function Counter(){
                 fontSize: '100%',
                 top: '20vh',
                 marginRight: '5px',
-                backgroundColor: 'green',
+                backgroundColor: 'blue',
                 borderRadius: '8%',
                 color: 'orange',
               }}
